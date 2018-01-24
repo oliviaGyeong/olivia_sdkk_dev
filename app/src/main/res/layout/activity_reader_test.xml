@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sub_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_credit"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btn_a0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A0: 초기화 요청 " />
+
+            <Button
+                android:id="@+id/btn_a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A1: 리더기상태 정보 요청 " />
+
+            <Button
+                android:id="@+id/btn_a2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A2: 시간전송요청" />
+
+            <Button
+                android:id="@+id/btn_a3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A3: 상호 인증 요청" />
+
+            <Button
+                android:id="@+id/btn_a4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A4: 암호화키 상태변경 요" />
+
+            <Button
+                android:id="@+id/btn_a5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A5: 암호화키 D/N 완료 요청" />
+
+            <Button
+                android:id="@+id/btn_a6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A6: 일반거래 요청 " />
+
+            <Button
+                android:id="@+id/btn_a7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A7: ic 카드거래 요청 " />
+
+            <Button
+                android:id="@+id/btn_a8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A8: ic 카드터 데이 요청" />
+
+            <Button
+                android:id="@+id/btn_a9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A9: 발급사 인증 요청 " />
+
+            <Button
+                android:id="@+id/btn_4a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4A: ic 카드 삽입 여부 요청 " />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

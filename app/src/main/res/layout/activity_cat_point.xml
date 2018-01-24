@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sub_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sv_catpoint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true">
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+         	
+		    <fragment
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/fragmentCon"
+		        android:name="com.example.kcpsecutest.common.ConmodeLayout"
+		        tools:layout="@layout/activity_main" />
+
+		    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="결제금액" />
+			    <EditText 
+			        android:id="@+id/edit_totamt_catpoint"
+			        android:text="1000"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+		    </LinearLayout>
+		    
+		    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="구분코드" />
+			    <EditText 
+			        android:id="@+id/edit_insmon_catpoint"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+		    </LinearLayout>
+        	
+		    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="비밀번호" />
+			    <EditText 
+			        android:id="@+id/edit_passwd_catpoint"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+		    </LinearLayout>
+		    
+		    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="원거래일자" />
+			    <EditText 
+			        android:id="@+id/edit_otxdt_catpoint"
+			        android:hint="YYMMDD"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" />
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="원승인번호" />
+			    <EditText 
+			        android:id="@+id/edit_appno_catpoint"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+		    </LinearLayout>
+		    
+		    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+			    <TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="포인트구분(조회:0,적립:1,사용:2,할인:3)" />
+			    <EditText 
+			        android:id="@+id/edit_trcode_catpoint"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content" />
+		    </LinearLayout>
+		
+		    <fragment
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/fragmentButton"
+		        android:name="com.example.kcpsecutest.common.ButtonLayout"
+		        tools:layout="@layout/activity_main" />
+		    
+		</LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

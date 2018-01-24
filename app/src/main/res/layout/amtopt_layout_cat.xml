@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="5" >
+			<TextView
+				android:text="포스금액계산"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<CheckBox 
+			    android:id="@+id/chk_amtopt_cat"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+			<TextView
+				android:text="복합과세 여부"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<CheckBox 
+			    android:id="@+id/chk_cpxflag_cat"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+			<TextView
+                android:text="할부개월"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edit_insmon_cat"
+                android:inputType="number"
+                android:hint="00"
+                android:text="00"
+                android:maxLength="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+			<TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="총금액" />
+            <EditText
+                android:id="@+id/edit_totamt_cat"
+                android:inputType="number"
+                android:text="1000"
+                android:hint="00001000"
+                android:maxLength="9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+		        android:text="과세금액"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/edit_orgamt_cat"
+		        android:inputType="number"
+		        android:text="1000"
+		        android:hint="000000909"
+                android:maxLength="9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+			<TextView
+		        android:text="면세금액"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/edit_dutyamt_cat"
+		        android:inputType="number"
+		        android:text="0"
+		        android:hint="000000000"
+                android:maxLength="9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		    <TextView
+		        android:text="세금"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/edit_taxamt_cat"
+		        android:inputType="number"
+		        android:text="0"
+		        android:hint="000000000"
+                android:maxLength="9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		    <TextView
+		        android:text="봉사료"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		    <EditText
+		        android:id="@+id/edit_svcamt_cat"
+		        android:inputType="number"
+		        android:text="0"
+		        android:hint="00000000"
+                android:maxLength="9"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		    <TextView
+                android:text="원 거래일자"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edit_otxdt_cat"
+                android:inputType="number"
+                android:maxLength="6"
+                android:hint="YYMMDD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="원 승인번호"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edit_appno_cat"
+                android:inputType="number"
+                android:maxLength="12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </GridLayout>
+</LinearLayout>

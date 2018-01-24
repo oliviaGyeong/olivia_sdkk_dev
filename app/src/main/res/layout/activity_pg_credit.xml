@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pg_credit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kcpsecutest.server.PgCreditActivity">
+
+    <ScrollView
+        android:id="@+id/sv_credit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="연결모드" />
+
+                <EditText
+                    android:id="@+id/edit_conmode_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="TEST_LAN" />
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/fragmentCard"
+                android:name="com.example.kcpsecutest.common.CardInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/cardinfo_layout_server" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMV_DATA" />
+
+                <EditText
+                    android:id="@+id/edit_emv_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="MDE3N0xNEB5FauuG+56Fpqi5fqtMqscAAAUQAAEga57gUDUGY3ftEwi1NdJqUeCuNVX2xallrBU1jQ1fjVs3MDMwMDEyNDExOTg1nycBL58DAJ80Ax8DK581ATifHghEQzAwMDAwQp9TAVKEB9QQAAABIFGfCQIARZ9BBAAAAk4FCAAAIADgKMhAAAAIAKDy4CYSARCgAAUiAAAAAAAAAAAAAAD/GSdatidD7MgAi1gAABcCAQ==" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호" />
+
+                <EditText
+                    android:id="@+id/edit_passwd_credit"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.71"
+                    android:gravity="right"
+                    android:inputType="textPassword"
+                    android:maxLength="20" />
+
+                <Button
+                    android:id="@+id/btn_passwd_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="입력" />
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/fragmentAmt"
+                android:name="com.example.kcpsecutest.common.AmtoptLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/amtopt_layout_cat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <view
+                    android:id="@+id/view_sign_credit"
+                    class="kr.co.kcp.api.DrawPanelView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="#000000" />
+
+                <ImageView
+                    android:id="@+id/img_sign_credit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5" />
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.80"
+                android:columnCount="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제휴번호" />
+
+                <EditText
+                    android:id="@+id/edit_pg_partner_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12345123451234512345" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:text="부분취소 사용 여부" />
+
+                <CheckBox
+                    android:id="@+id/chk_partcan_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="취소가능금액" />
+
+                <EditText
+                    android:id="@+id/edit_pg_bal_amt_credit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="부분취소금액" />
+
+                <EditText
+                    android:id="@+id/edit_pg_can_amt_credit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+            </GridLayout>
+
+            <fragment
+                android:id="@+id/fragmentButton"
+                android:name="com.example.kcpsecutest.common.PgButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/pg_button_layout" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_llayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/version_num_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_toStartOf="@+id/textDeviceAuthNum"-->
+                <!--android:text="@string/text_lable_device_authorization_number" />-->
+
+                <TextView
+                    android:id="@+id/textDeviceAuthNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/approvalChoiceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/version_num_layout"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="11dp">
+
+            <TextView
+                android:id="@+id/textApprovalChoice"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="거래종류 " />
+
+            <RadioGroup
+                android:id="@+id/radioGroupApproval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/textApprovalChoice"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/a6RadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="A6 일반" />
+
+                <RadioButton
+                    android:id="@+id/a7RadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="A7 IC" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+        <!-- for a6-->
+        <RelativeLayout
+            android:id="@+id/a6Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/approvalChoiceLayout"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:id="@+id/trcodeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/trcode_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거래구분  " />
+
+                <RadioGroup
+                    android:id="@+id/trcode_a6_RadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="18dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RadioBtn_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="신용" />
+
+                    <RadioButton
+                        android:id="@+id/RadioBtn_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="기타서비스" />
+
+                    <RadioButton
+                        android:id="@+id/RadioBtn_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="회원카드" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/trtypeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/trcodeLayout">
+
+                <TextView
+                    android:id="@+id/trtype_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거래유형 " />
+
+                <RadioGroup
+                    android:id="@+id/tetype_RadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="18dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RadioBtn_msr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="msr" />
+
+                    <RadioButton
+                        android:id="@+id/RadioBtn_keyIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="keyIn" />
+
+                </RadioGroup>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tr_keyin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/trtypeLayout">
+
+                <TextView
+                    android:id="@+id/texttrscnum"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edit_trscnum"
+                    android:text="개인식별번호 " />
+
+                <EditText
+                    android:id="@+id/edit_trscnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="40"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <!-- for cancel-->
+        <RelativeLayout
+            android:id="@+id/a7Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amountLayout"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin">
+
+            <RelativeLayout
+                android:id="@+id/trcodeLayout_a7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/trcode_text_a7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="거래구분  " />
+
+                <RadioGroup
+                    android:id="@+id/trcode_a7_RadioBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="18dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/RadioBtn_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="승인" />
+
+                    <RadioButton
+                        android:id="@+id/RadioBtn_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="취소" />
+
+                    <RadioButton
+                        android:id="@+id/RadioBtn_fallback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="fallback" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/term_id_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/trcodeLayout_a7">
+
+                <TextView
+                    android:id="@+id/textterm_id"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edit_term_id"
+                    android:text="단말 ID " />
+
+                <EditText
+                    android:id="@+id/edit_term_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="40"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/amount_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/term_id_layout">
+
+                <TextView
+                    android:id="@+id/textamount"
+                    android:layout_width="138dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edit_amount"
+                    android:text="거래금액 " />
+
+                <EditText
+                    android:id="@+id/edit_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

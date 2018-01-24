@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cat_cash_chekck"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kcpsecutest.cat.CatCashCheckActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentCon"
+        android:name="com.example.kcpsecutest.common.ConmodeLayout"
+        tools:layout="@layout/conmode_layout_cat" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수표종류(0:자기앞, 1:가계, 2:당좌)" />
+        <EditText
+            android:id="@+id/edit_checktype_catcashcheck"
+            android:text=""
+            android:layout_height="wrap_content"
+            android:layout_width="100dp" />/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="권종코드/수표조회" />
+        <EditText
+            android:id="@+id/edit_checkno_catcashcheck"
+            android:text="1012345678912345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="수표계좌번호"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0" />
+        <EditText
+            android:id="@+id/edit_checkacc_catcashcheck"
+            android:text="수표계좌번호"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="주민등록번호(자기앞일경우제외)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0" />
+        <EditText
+            android:id="@+id/edit_checkid_catcashcheck"
+            android:text="12345678901234"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수표금액" />
+        <EditText
+            android:id="@+id/edit_totamt_catcashcheck"
+            android:text="1000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="수표발행일자"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_checkdate_catcashcheck"
+            android:text="170214"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:text="조회"
+            android:id="@+id/btn_check_cashCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

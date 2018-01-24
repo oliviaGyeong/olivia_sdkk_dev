@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/sub_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_server_main"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="통신연동" />
+
+        <Button
+            android:id="@+id/btn_cat_main"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="CAT연동" />
+
+        <Button
+            android:id="@+id/btn_reader_test"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Reader TEST" />
+
+        </LinearLayout>
+
+</LinearLayout>

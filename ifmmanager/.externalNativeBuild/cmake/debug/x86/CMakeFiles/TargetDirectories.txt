@@ -1,0 +1,6 @@
+/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/x86/CMakeFiles/edit_cache.dir
+/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/x86/CMakeFiles/rebuild_cache.dir
+/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/x86/CMakeFiles/pkt_VAN.dir
+/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/x86/CMakeFiles/pkt_IFM.dir
+/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/x86/CMakeFiles/base64.dir
+/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/x86/CMakeFiles/func.dir

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sub_bg">
+
+   
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="사업자번호 : "
+            android:gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+		<EditText
+            android:id="@+id/edit_busino_key"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:inputType="number"
+            android:text="1138521083"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="public_key_ver : "
+            android:gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+		<EditText
+            android:id="@+id/edit_public_key"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:inputType="number"
+            android:text="00"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="input_enc : "
+            android:gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+		<EditText
+            android:id="@+id/edit_input_enc"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:inputType="number"
+            android:text="02D30054AC1E462B05E66340BF7E74CD9F53560D49174F9A7E2B835E81A9BDBEB349ACB020BAC2AC926565BB777706F562B2B011982684104D7606867690A5914A7774BD0C0128EBADF18EAB61848C24363BDC54AC489AC304958C77D34D9A500C6638E08647D6153B1C532F017B6F0AF85A889FC0554D52BB5CC7E7E7092E5B073EF57A8E811787D3FCEA1F965E96C556A4701C26702AD50EDB4C4D726CB467664284305125264E4975C61276B83D74B5200396D8B37929D1AFB607A633DB04FB21B9CA2E422893D8548645EB9A09EEC1DCEC8FC3963A698A204487D0325164EFB954E921AE65FA1EEE3EF87186546A7CBB3735D30C1B45984F2EEA6225FA45"
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="ksn : "
+            android:gravity="right"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+		<EditText
+            android:id="@+id/edit_ksn"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:inputType="number"
+            android:text="GFNGFQgAAjAwMg=="
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_key_cert"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="요청" />
+
+        <Button
+            android:id="@+id/btn_key"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="완료" />
+    </LinearLayout>
+
+</LinearLayout>

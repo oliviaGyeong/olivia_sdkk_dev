@@ -1,0 +1,95 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/CMakeLists.txt"
+	],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/olivia/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"libraries" : 
+	{
+		"base64-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "base64",
+			"buildCommand" : "/home/olivia/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target base64",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/home/olivia/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/olivia/Android/Sdk/ndk-bundle/sysroot -Dbase64_EXPORTS -I../../../../src/main/cpp/include  -isystem /home/olivia/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/src/main/cpp/base64.c",
+					"workingDirectory" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/build/intermediates/cmake/debug/obj/armeabi-v7a/libbase64.so",
+			"toolchain" : "6728907470517697304"
+		},
+		"func-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "func",
+			"buildCommand" : "/home/olivia/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target func",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/home/olivia/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/olivia/Android/Sdk/ndk-bundle/sysroot  -I../../../../src/main/cpp/include  -isystem /home/olivia/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/src/main/cpp/func.c",
+					"workingDirectory" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a/libfunc.a",
+			"toolchain" : "6728907470517697304"
+		},
+		"pkt_IFM-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "pkt_IFM",
+			"buildCommand" : "/home/olivia/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target pkt_IFM",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/home/olivia/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/olivia/Android/Sdk/ndk-bundle/sysroot -Dpkt_IFM_EXPORTS -I../../../../src/main/cpp/include  -isystem /home/olivia/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/src/main/cpp/pkt_IFM.c",
+					"workingDirectory" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/build/intermediates/cmake/debug/obj/armeabi-v7a/libpkt_IFM.so",
+			"toolchain" : "6728907470517697304"
+		},
+		"pkt_VAN-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "pkt_VAN",
+			"buildCommand" : "/home/olivia/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target pkt_VAN",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=/home/olivia/Android/Sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/linux-x86_64 --sysroot=/home/olivia/Android/Sdk/ndk-bundle/sysroot -Dpkt_VAN_EXPORTS -I../../../../src/main/cpp/include  -isystem /home/olivia/Android/Sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/src/main/cpp/pkt_VAN.c",
+					"workingDirectory" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/olivia/KCP_SDK/Worspace/olivia_sdkk_dev/ifmmanager/build/intermediates/cmake/debug/obj/armeabi-v7a/libpkt_VAN.so",
+			"toolchain" : "6728907470517697304"
+		}
+	},
+	"toolchains" : 
+	{
+		"6728907470517697304" : 
+		{
+			"cCompilerExecutable" : "/home/olivia/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/olivia/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

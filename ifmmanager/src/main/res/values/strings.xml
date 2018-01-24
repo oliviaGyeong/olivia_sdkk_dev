@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">IFMManager</string>
+    <string name="splog_message"> </string>
+    <string name="splog_result">Result: </string>
+    <string name="splog_time">Time: </string>
+</resources>

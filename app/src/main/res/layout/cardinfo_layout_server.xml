@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="3" >
+        
+        <RadioGroup
+			android:id="@+id/rg_txtype_server"
+			android:orientation="horizontal"
+			android:checkedButton="@+id/rbtn_keyin_server"
+			android:layout_columnSpan="2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<RadioButton
+			    android:id="@id/rbtn_keyin_server"
+			    android:text="keyIn"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" />
+			<RadioButton
+			    android:id="@+id/rbtn_swipe_server"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="swipe"/>
+			<RadioButton
+			    android:id="@+id/rbtn_ic_server"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="ic"/>
+			<RadioButton
+			    android:id="@+id/rbtn_fb_server"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="fb"/>
+    </RadioGroup>
+            <TextView
+				android:text="KSN"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edit_ksn_server"
+                android:text="hjEwAAAAACAAAw=="
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+				android:text="msdata"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edit_msdata_server"
+                android:text="V2TxBoqW0fCfQKp4GSfh+3fHQUPSAVf5iMZZ+XxVsKLlUeYxvMxSStZ6JpkT81sQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </GridLayout>
+
+</LinearLayout>

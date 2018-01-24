@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cat_pg_credit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kcpsecutest.cat.CatPgCreditActivity">
+
+    <ScrollView
+        android:id="@+id/sv_catpgcredit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragmentCon"
+                android:name="com.example.kcpsecutest.common.ConmodeLayout"
+                tools:layout="@layout/conmode_layout_cat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/fragmentAmt"
+                    android:name="com.example.kcpsecutest.common.AmtoptLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/amtopt_layout_cat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <view
+                        android:id="@+id/view_sign_catcredit"
+                        class="kr.co.kcp.api.DrawPanelView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:background="#000000" />
+
+                    <ImageView
+                        android:id="@+id/img_sign_catcredit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5" />
+                </LinearLayout>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PG가맹점 제휴번호" />
+
+                    <EditText
+                        android:id="@+id/edit_pg_partner_cat"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="부분취소 사용 여부" />
+
+                    <CheckBox
+                        android:id="@+id/chk_partcan_cat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남은금액" />
+
+                    <EditText
+                        android:id="@+id/edit_pg_bal_amt_cat"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="남은금액" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="변경금액" />
+
+                    <EditText
+                        android:id="@+id/edit_pg_can_amt_cat"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="변경금액" />
+                </GridLayout>
+
+                <fragment
+                    android:id="@+id/fragmentButton"
+                    android:name="com.example.kcpsecutest.common.PgButtonLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/pg_button_layout" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

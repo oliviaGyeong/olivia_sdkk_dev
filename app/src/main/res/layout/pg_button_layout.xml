@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pg_button_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kcpsecutest.common.PgButtonLayout">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_auth_pg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="승인 요청" />
+
+        <Button
+            android:id="@+id/btn_can_pg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소 요청" />
+
+        <Button
+            android:id="@+id/btn_partcan_pg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="부분취소 요청" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sub_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sv_catcredit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true">
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            
+        	<fragment
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/fragmentCon"
+		        android:name="com.example.kcpsecutest.common.ConmodeLayout"
+		        tools:layout="@layout/activity_main" />
+		    
+		    <fragment
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/fragmentAmt"
+		        android:name="com.example.kcpsecutest.common.AmtoptLayout"
+		        tools:layout="@layout/activity_main" />
+        
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+	            <view
+			        android:id="@+id/view_sign_catcredit"
+			        android:layout_width="match_parent"
+			        android:layout_height="match_parent"
+			        android:layout_weight="0.5"
+			        android:background="#000000"
+			        class = "kr.co.kcp.api.DrawPanelView" />
+	            <ImageView
+	                android:layout_gravity="center"
+	                android:id="@+id/img_sign_catcredit"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_weight="0.5" />
+            </LinearLayout>
+            
+            <fragment
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/fragmentButton"
+		        android:name="com.example.kcpsecutest.common.ButtonLayout"
+		        tools:layout="@layout/activity_main" />
+
+
+		</LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>

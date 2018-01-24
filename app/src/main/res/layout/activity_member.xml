@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sub_bg" >
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:text="연결모드"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	    <EditText
+	        android:id="@+id/edit_conmode_member"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:singleLine="true"
+	        android:text="TEST_WIFI" />
+	</LinearLayout>
+	<fragment
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/fragmentCard"
+		android:name="com.example.kcpsecutest.common.CardInfoLayout"
+		tools:layout="@layout/activity_main" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="거래금액"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_totamt_member"
+            android:inputType="number"
+            android:gravity="right"
+            android:text="1000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="원 거래일자"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_appday_member"
+            android:inputType="number"
+            android:maxLength="6"
+            android:hint="YYMMDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="일"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="원거래 승인번호"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_appno_member"
+            android:inputType="number"
+            android:maxLength="12"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <RadioGroup
+            android:id="@+id/rg_memtype_member"
+            android:checkedButton="@+id/rbtn_sk_member"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@id/rbtn_sk_member"
+                android:text="SK텔레콤"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:id="@+id/rbtn_lgu_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LG유플러스"/>
+            <RadioButton
+                android:id="@+id/rbtn_kt_member"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KT"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_memapp_member"
+            android:text="승인 요청"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_memcan_member"
+            android:text="취소 요청"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_memcheck_member"
+            android:text="조회 요청"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
